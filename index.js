@@ -6,7 +6,7 @@ function setDefaultState() {
   baseState[id] = {
     status: "new",
     id: id,
-    title: "This site uses 🍪to keep track of your tasks"
+    title: "Keep track of your tasks here! 😎😎😋"
   };
   syncState(baseState);
 }
@@ -81,7 +81,7 @@ function addItem(text, status, id, noUpdate) {
 
   $(".form-control")
     .val("")
-    .attr("placeholder", "✍️ Add item...");
+    .attr("placeholder", "✍️ Add your task here...");
   setTimeout(function() {
     $(".todo-list li").removeClass("animated flipInX");
   }, 500);
@@ -148,7 +148,7 @@ $(function() {
       .parent();
 
     if ($(".todo-list li").length == 1) {
-      box.removeClass("animated flipInX").addClass("animated                bounceOutLeft");
+      box.removeClass("animated flipInX").addClass("animated bounceOutLeft");
       setTimeout(function() {
         box.remove();
         $(".no-items").removeClass("hidden");
@@ -181,13 +181,13 @@ var d = new Date();
 
 
 var weekday = new Array(7);
-weekday[0] = "Sunday 🖖";
-weekday[1] = "Monday 💪😀";
-weekday[2] = "Tuesday 😜";
-weekday[3] = "Wednesday 😌☕️";
-weekday[4] = "Thursday 🤗";
-weekday[5] = "Friday 🍻";
-weekday[6] = "Saturday 😴";
+weekday[0] = "Sunday ";
+weekday[1] = "Monday ";
+weekday[2] = "Tuesday ";
+weekday[3] = "Wednesday ";
+weekday[4] = "Thursday ";
+weekday[5] = "Friday ";
+weekday[6] = "Saturday ";
 
 
 var n = weekday[d.getDay()];
